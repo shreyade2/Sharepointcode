@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T-Shaped Table</title>
+<style>
+       body {
+           font-family: Arial, sans-serif;
+       }
+       .table-container {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           margin-top: 50px;
+           width: max-content;
+       }
+       .table-container table {
+             border: 1px solid ;
+            border-style: dashed;
+           width: 50%;
+           margin: 10px 0;
+       }
+       .table-container th, .table-container td {
+           border: 1px solid;
+           border-color: white;
+           padding: 8px 12px;
+           text-align: center;
+       }
+       .horizontal-table {
+           width: 100%;
+       }
+       .vertical-table {
+           width: 100%;
+       }
+       .hours {
+         color: #FFFF00;
+         font-size: 12px;
+       }
+       .level{
+         color: #002060;
+         font-size: 18px;
+         font-weight: bold;
+       }
+       .blank {
+         background-color: #DCDCDC;
+       }
+       .mandate {
+         background-color: #DAF7D9;
+         font-size: 12px;
+       }
+       .optimal {
+         background-color: #FFF2CC;
+         font-size: 12px;
+       }
+       .heading1 {
+         background-color: #548235;
+         color: white;
+         font-size: 13px;
+       }
+       .subheading {
+         background-color: #9BC2E6;
+         color: white;
+       }
+       .top-row {
+         background-image: linear-gradient(90deg,black,white,black);
+       }
+       .vertical-table {
+           flex-direction: column;
+           align-items: center;
+           display:flex;
+       }
+       .vertical-table table {
+           border: 1px solid ;
+            border-style: solid;
+           width:fit-content;
+           margin: 10px 0;
+       }
+       .vertical-table th, .vertical-table td {
+           border: 4px solid;
+           border-color: white;
+           padding: 10px 26px;
+           text-align: center;
+       }
+       .sub-table {
+         width:100%;
+         border: 2px solid ;
+         border-style: dotted;
+       }
+       .td {
+         font-size: 12px;
+       }
+</style>
+</head>
+<body>
+  <div>
+<div class="table-container">
+<!-- Horizontal Part of the T -->
+<table class="horizontal-table">
+  <tr>"T" Shape GenAI Training Plan</tr>
+  <tr class="top-row">
+    <td class="hours">Mandatory Learnings Hours - 26 Hrs.</td>
+    <td class="level">Foundation Level</td>
+    <td class="hours">Optional Learnings Hours - 12 Hrs.</td>					
+  </tr>
+  </table>
+  <table>
+<tr class="heading1">
+  <th>AI/ML Foundation (7.5 Hrs) </th>
+  <th>Gen AI Foundation (10.5 Hrs)	</th>
+  <th>Basic Python (4.5 Hrs)	</th>				
+  <th>Promt Engineering (3.5 Hrs)</th>
+  <th>AI Assurance (x.x Hrs)	</th>	
+</tr>
+<tr>
+  <td class="mandate">
+  <a href="https://cognizantonline.sharepoint.com/sites/KH-INS-QEA-GENAI/SitePages/Learning-Curriculum.aspx">AI & ML for Business Leaders
+  </a></td>
+  <td class="mandate">Generative AI Fundamentals for QEA</td>					
+  <td class="mandate">Python For Everybody : Learn Python Programming MADE EASY</td>					
+  <td class="mandate">Prompt Engineering	</td>		
+  <td class="blank"></td>
+</tr>
+<tr>
+  <td class="mandate">Machine Learning for Absolute Beginners</td>
+  <td class="mandate">GitHub Copilot Awareness Program for QEA	</td>	
+  <td class="blank"></td>
+  <td class="mandate">ChatGPT Prompt Engineering for Developers	</td>		
+  <td class="blank"></td></tr>
+<tr>
+  <td class="blank"></td>
+  <td class="optimal">Microsoft Azure AI Fundamentals: Generative AI</td>
+  <td class="optimal">Learn Python Tutorial: Kaggle		</td>	
+  <td class="blank"></td>
+  <td class="blank"></td>
+</tr>
+<tr>
+  <td class="optimal">Introduction to Machine Learning</td>
+  <td class="optimal">Generative AI for Everyone	</td>	
+  <td class="blank"></td>
+  <td class="blank"></td>
+  <td class="blank"></td>
+</tr>
+<table>  
+<tr class="top-row">
+    <td class="hours">Mandatory Learnings Hours - 72 Hrs.</td>
+    <td class="level">Advanced Level</td>
+    <td class="hours">Optional Learnings Hours - XX Hrs.</td>					
+  </tr>
+  </table>
+</table>
+</div>
+<!-- Vertical Part of the T -->
+<div class="vertical-table">
+<table class="vertical-table">
+
+<tr><th class="heading1">Coding Assistance (17 Hrs)</th></tr>
+<tr><td class="mandate">GitHub Copilot Advanced - Virtual Instructor Led Training</td></tr>
+<tr><td class="optimal">TBD</td></tr>
+<tr><td></td></tr>
+<tr><th class="heading1">Advanced Solutions (15 Hrs)</th></tr>
+<tr><td class="mandate">Generative AI for QEA Advanced</td></tr>
+<tr>
+  <td>
+  <table class="sub-table">
+    <tr>
+    <td class="subheading">MS Azure</td>
+    <td class="subheading">AWS</td>				
+    <td class="subheading">Google	</td>
+    </tr>
+    <tr>
+    <td class="mandate">TBD</td>
+    <td class="mandate">TBD</td>				
+    <td class="mandate">TBD	</td>
+    </tr>
+     <tr>
+    <td class="optimal">TBD</td>
+    <td class="optimal">TBD</td>				
+    <td class="optimal">TBD	</td>
+    </tr>
+  </table>
+  </td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>
